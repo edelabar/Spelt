@@ -1,4 +1,5 @@
 import Foundation
+import Stencil
 import SwiftYAML
 
 public struct SiteReader {
@@ -28,7 +29,7 @@ public struct SiteReader {
             
             var isDirectory: ObjCBool = false
             if fileManager.fileExists(atPath: url.path, isDirectory: &isDirectory) && !isDirectory.boolValue {
-                guard let stringContents = try? String(contentsOfFile: url.path, encoding: String.Encoding.utf8) , FrontMatterReader.stringContainsFrontMatter(stringContents) else {
+                guard let stringContents = try? String(contentsOfFile: url.path, encoding: String.Encoding.utf8), FrontMatterReader.stringContainsFrontMatter(stringContents) else {
                     let file = StaticFile(path: url.path)
                     staticFiles.append(file)
                     continue
@@ -106,7 +107,8 @@ extension Metadata {
         }
         
         if let categories = self["categories"]?.stringValue {
-            return categories.split(separator: Character(",")).map() { String($0).trim(character: " ") }
+            let space = CharacterSet(charactersIn: " ")
+            return categories.split(separator: Character(",")).map() { String($0).trimmingCharacters(in: space) }
         }
         
         if let categories = self["categories"]?.arrayValue {

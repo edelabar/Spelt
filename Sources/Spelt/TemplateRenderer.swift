@@ -1,4 +1,5 @@
 import PathKit
+import Stencil
 
 struct TemplateRenderer: Renderer {
     enum RendererType {
@@ -42,7 +43,7 @@ struct TemplateRenderer: Renderer {
         try context.push(dictionary: file.payload) {
             let template = Template(templateString: file.contents)
             do {
-                let rendered = try template.render(context)
+                let rendered = try template.render(context.flatten())
                 file.contents = rendered
             }
             catch {
@@ -69,8 +70,9 @@ struct TemplateRenderer: Renderer {
         
         do {  
             try context.push(dictionary: file.payload) {
-                let template = try Template(path: templatePath)
-                let rendered = try template.render(context)
+                // FIXME: Is it OK for name to be nil?? I guess it gets pulled from metadata later?
+                let template = try Template(templateString: templatePath.read(), environment: context.environment, name: nil)
+                let rendered = try template.render(context.flatten())
                 let contents = rendered.stringByReplacingFrontMatter("")
                 file.contents = contents
                 

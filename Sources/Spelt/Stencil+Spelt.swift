@@ -1,3 +1,5 @@
+import Stencil
+
 class SpeltExtension: Extension {
     static func defaultExtension() -> Extension {
         let defaultExtension = SpeltExtension()
@@ -177,6 +179,29 @@ func truncateFilter(_ value: Any?, arguments: [Any?]) throws -> Any? {
     return string[string.startIndex..<endIndex]
 }
 
+func joinFilter(_ value: Any?, arguments: [Any?]) throws -> Any? {
+    guard let array = value as? [Any] else {
+        return TemplateSyntaxError("'join' filter expects array input")
+    }
+    
+    let stringArray = array.reduce([String]()) { strings, value in
+        if let string = value as? String {
+            return strings + [string]
+        }
+        return strings
+    }
+    
+    guard stringArray.isEmpty == false else {
+        return TemplateSyntaxError("'join' filter expects array of strings")
+    }
+    
+    guard let separator = arguments.first as? String else {
+        throw TemplateSyntaxError("'join' filter expects separator as argument")
+    }
+    
+    return stringArray.joined(separator: separator)
+}
+
 func arrayToSentenceStringFilter(_ value: Any?) throws -> Any? {
     guard let array = value as? [Any] else {
         return TemplateSyntaxError("'array_to_sentence' filter expects array input")
@@ -208,6 +233,18 @@ func numberOfWordsFilter(_ value: Any?) throws -> Any? {
     }
     
     return string.components(separatedBy: CharacterSet.whitespaces).count
+}
+
+func defaultFilter(_ value: Any?, arguments: [Any?]) throws -> Any? {
+    guard let firstArgument = arguments.first, arguments.count == 1 else {
+        return TemplateSyntaxError("'default' filter expects (only) one argument")
+    }
+    
+    if value == nil {
+        return firstArgument
+    }
+    
+    return value
 }
 
 func gistTag(_ parser: TokenParser, token: Token) throws -> NodeType {

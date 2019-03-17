@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Stencil
 
 enum NumericVariableType {
     case integerType(Int)
