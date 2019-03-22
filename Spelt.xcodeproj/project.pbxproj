@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66B368CA223E281D005742DB /* Stencil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B368C9223E281C005742DB /* Stencil.framework */; };
+		66B368CB223E2834005742DB /* Stencil.framework in Copy Frameworks to embed in Framework */ = {isa = PBXBuildFile; fileRef = 66B368C9223E281C005742DB /* Stencil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66B368CC223E2841005742DB /* Stencil.framework in Copy Frameworks to Products Directory */ = {isa = PBXBuildFile; fileRef = 66B368C9223E281C005742DB /* Stencil.framework */; };
 		FD0550F51D993FBA00394BB2 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6D607B1D4BA3B100A7C277 /* PathKit.framework */; };
 		FD0F9A291DCF161B005CDCBD /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F9A281DCF161B005CDCBD /* Version.swift */; };
 		FD0F9A2B1DCF18FF005CDCBD /* SpeltKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F9A2A1DCF18FF005CDCBD /* SpeltKit.swift */; };
@@ -51,19 +54,6 @@
 		FD6D5FF81D4B91F800A7C277 /* YAMLDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D5FF71D4B91F800A7C277 /* YAMLDateFormatter.swift */; };
 		FD6D5FFB1D4B969B00A7C277 /* Permalinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D5FFA1D4B969B00A7C277 /* Permalinks.swift */; };
 		FD6D5FFD1D4B975400A7C277 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D5FFC1D4B975400A7C277 /* File.swift */; };
-		FD6D60611D4BA19D00A7C277 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60521D4BA19D00A7C277 /* Context.swift */; };
-		FD6D60621D4BA19D00A7C277 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60531D4BA19D00A7C277 /* Filters.swift */; };
-		FD6D60641D4BA19D00A7C277 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60551D4BA19D00A7C277 /* Lexer.swift */; };
-		FD6D60651D4BA19D00A7C277 /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60561D4BA19D00A7C277 /* Namespace.swift */; };
-		FD6D60661D4BA19D00A7C277 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60571D4BA19D00A7C277 /* Node.swift */; };
-		FD6D60671D4BA19D00A7C277 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60581D4BA19D00A7C277 /* Parser.swift */; };
-		FD6D60681D4BA19D00A7C277 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60591D4BA19D00A7C277 /* String+Extensions.swift */; };
-		FD6D60691D4BA19D00A7C277 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D605A1D4BA19D00A7C277 /* Template.swift */; };
-		FD6D606A1D4BA19D00A7C277 /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D605C1D4BA19D00A7C277 /* Include.swift */; };
-		FD6D606B1D4BA19D00A7C277 /* Inheritence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D605D1D4BA19D00A7C277 /* Inheritence.swift */; };
-		FD6D606C1D4BA19D00A7C277 /* TemplateLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D605E1D4BA19D00A7C277 /* TemplateLoader.swift */; };
-		FD6D606D1D4BA19D00A7C277 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D605F1D4BA19D00A7C277 /* Tokenizer.swift */; };
-		FD6D606E1D4BA19D00A7C277 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60601D4BA19D00A7C277 /* Variable.swift */; };
 		FD6D60701D4BA21B00A7C277 /* TemplateRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D606F1D4BA21B00A7C277 /* TemplateRenderer.swift */; };
 		FD6D60721D4BA27900A7C277 /* Stencil+Spelt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60711D4BA27900A7C277 /* Stencil+Spelt.swift */; };
 		FD6D60741D4BA2AE00A7C277 /* Stencil+MathFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D60731D4BA2AE00A7C277 /* Stencil+MathFilters.swift */; };
@@ -127,6 +117,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				66B368CC223E2841005742DB /* Stencil.framework in Copy Frameworks to Products Directory */,
 				FD3915A21D7F016A00F7F5F7 /* GCDWebServers.framework in Copy Frameworks to Products Directory */,
 				FD3915A31D7F016A00F7F5F7 /* Witness.framework in Copy Frameworks to Products Directory */,
 				FD39158A1D7DC56000F7F5F7 /* SwiftSass.framework in Copy Frameworks to Products Directory */,
@@ -146,6 +137,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				66B368CB223E2834005742DB /* Stencil.framework in Copy Frameworks to embed in Framework */,
 				FDE1D6221D7DB72D009A1A77 /* SwiftSass.framework in Copy Frameworks to embed in Framework */,
 				FDE1D6231D7DB72D009A1A77 /* PathKit.framework in Copy Frameworks to embed in Framework */,
 				FD3915951D7DCBBB00F7F5F7 /* Result.framework in Copy Frameworks to embed in Framework */,
@@ -162,12 +154,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		66B368C9223E281C005742DB /* Stencil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stencil.framework; path = Carthage/Build/Mac/Stencil.framework; sourceTree = "<group>"; };
 		FD0F9A281DCF161B005CDCBD /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		FD0F9A2A1DCF18FF005CDCBD /* SpeltKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeltKit.swift; sourceTree = "<group>"; };
 		FD2EE1031D86CA1C00700C58 /* ExcerptRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerptRenderer.swift; sourceTree = "<group>"; };
 		FD2EE1051D86CCD900700C58 /* Paginate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paginate.swift; sourceTree = "<group>"; };
 		FD3915751D7DB78E00F7F5F7 /* spelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD39157E1D7DB78E00F7F5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD3915901D7DCBAE00F7F5F7 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
 		FD3915911D7DCBAE00F7F5F7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		FD3915981D7EEF8600F7F5F7 /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
@@ -191,19 +183,6 @@
 		FD6D5FF71D4B91F800A7C277 /* YAMLDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMLDateFormatter.swift; sourceTree = "<group>"; };
 		FD6D5FFA1D4B969B00A7C277 /* Permalinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permalinks.swift; sourceTree = "<group>"; };
 		FD6D5FFC1D4B975400A7C277 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		FD6D60521D4BA19D00A7C277 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
-		FD6D60531D4BA19D00A7C277 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
-		FD6D60551D4BA19D00A7C277 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
-		FD6D60561D4BA19D00A7C277 /* Namespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
-		FD6D60571D4BA19D00A7C277 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		FD6D60581D4BA19D00A7C277 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		FD6D60591D4BA19D00A7C277 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		FD6D605A1D4BA19D00A7C277 /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
-		FD6D605C1D4BA19D00A7C277 /* Include.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
-		FD6D605D1D4BA19D00A7C277 /* Inheritence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inheritence.swift; sourceTree = "<group>"; };
-		FD6D605E1D4BA19D00A7C277 /* TemplateLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateLoader.swift; sourceTree = "<group>"; };
-		FD6D605F1D4BA19D00A7C277 /* Tokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
-		FD6D60601D4BA19D00A7C277 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
 		FD6D606F1D4BA21B00A7C277 /* TemplateRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateRenderer.swift; sourceTree = "<group>"; };
 		FD6D60711D4BA27900A7C277 /* Stencil+Spelt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stencil+Spelt.swift"; sourceTree = "<group>"; };
 		FD6D60731D4BA2AE00A7C277 /* Stencil+MathFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stencil+MathFilters.swift"; sourceTree = "<group>"; };
@@ -247,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0550F51D993FBA00394BB2 /* PathKit.framework in Frameworks */,
+				66B368CA223E281D005742DB /* Stencil.framework in Frameworks */,
 				FD39159E1D7F015E00F7F5F7 /* GCDWebServers.framework in Frameworks */,
 				FD39159F1D7F015E00F7F5F7 /* Witness.framework in Frameworks */,
 				FD3915921D7DCBAE00F7F5F7 /* Commandant.framework in Frameworks */,
@@ -268,14 +248,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD3915761D7DB78E00F7F5F7 /* spelt */ = {
-			isa = PBXGroup;
-			children = (
-				FD39157E1D7DB78E00F7F5F7 /* Info.plist */,
-			);
-			path = spelt;
-			sourceTree = "<group>";
-		};
 		FD6D5FE21D4A4FBC00A7C277 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,42 +290,12 @@
 			name = Renderers;
 			sourceTree = "<group>";
 		};
-		FD6D60511D4BA19D00A7C277 /* Stencil */ = {
-			isa = PBXGroup;
-			children = (
-				FD6D605B1D4BA19D00A7C277 /* TemplateLoader */,
-				FD6D60521D4BA19D00A7C277 /* Context.swift */,
-				FD6D60531D4BA19D00A7C277 /* Filters.swift */,
-				FD6D60551D4BA19D00A7C277 /* Lexer.swift */,
-				FD6D60561D4BA19D00A7C277 /* Namespace.swift */,
-				FD6D60571D4BA19D00A7C277 /* Node.swift */,
-				FD6D60581D4BA19D00A7C277 /* Parser.swift */,
-				FD6D60591D4BA19D00A7C277 /* String+Extensions.swift */,
-				FD6D605A1D4BA19D00A7C277 /* Template.swift */,
-				FD6D605E1D4BA19D00A7C277 /* TemplateLoader.swift */,
-				FD6D605F1D4BA19D00A7C277 /* Tokenizer.swift */,
-				FD6D60601D4BA19D00A7C277 /* Variable.swift */,
-			);
-			name = Stencil;
-			path = Stencil/Stencil;
-			sourceTree = SOURCE_ROOT;
-		};
-		FD6D605B1D4BA19D00A7C277 /* TemplateLoader */ = {
-			isa = PBXGroup;
-			children = (
-				FD6D605C1D4BA19D00A7C277 /* Include.swift */,
-				FD6D605D1D4BA19D00A7C277 /* Inheritence.swift */,
-			);
-			path = TemplateLoader;
-			sourceTree = "<group>";
-		};
 		FD85319C1D4A29B700658286 = {
 			isa = PBXGroup;
 			children = (
 				FD8531AF1D4A2A3500658286 /* Sources */,
 				FD8531BE1D4A2A6200658286 /* Spelt */,
 				FD8531C91D4A2A6200658286 /* SpeltTests */,
-				FD3915761D7DB78E00F7F5F7 /* spelt */,
 				FD8531A81D4A2A1200658286 /* Products */,
 				FD8531DD1D4A3A4400658286 /* Frameworks */,
 			);
@@ -404,7 +346,6 @@
 				FD6D5FF91D4B968C00A7C277 /* Renderers */,
 				FD6D5FE31D4A4FC700A7C277 /* Model */,
 				FD6D5FE21D4A4FBC00A7C277 /* Helpers */,
-				FD6D60511D4BA19D00A7C277 /* Stencil */,
 			);
 			path = Spelt;
 			sourceTree = "<group>";
@@ -434,6 +375,7 @@
 		FD8531DD1D4A3A4400658286 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66B368C9223E281C005742DB /* Stencil.framework */,
 				FD39159C1D7F015E00F7F5F7 /* GCDWebServers.framework */,
 				FD39159D1D7F015E00F7F5F7 /* Witness.framework */,
 				FD3915901D7DCBAE00F7F5F7 /* Commandant.framework */,
@@ -538,24 +480,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					FD3915741D7DB78E00F7F5F7 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 					};
 					FD8531BC1D4A2A6200658286 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A9NP4475VH;
 						DevelopmentTeamName = "Niels de Hoog";
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					FD8531C41D4A2A6200658286 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A9NP4475VH;
 						DevelopmentTeamName = "Niels de Hoog";
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -686,19 +628,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6D5FF01D4B8FD400A7C277 /* SiteBuilder.swift in Sources */,
-				FD6D606E1D4BA19D00A7C277 /* Variable.swift in Sources */,
 				FD2EE1041D86CA1C00700C58 /* ExcerptRenderer.swift in Sources */,
 				FDB9A8A91D54B99B0016CDB7 /* SassConverter.swift in Sources */,
-				FD6D60681D4BA19D00A7C277 /* String+Extensions.swift in Sources */,
-				FD6D60651D4BA19D00A7C277 /* Namespace.swift in Sources */,
-				FD6D60621D4BA19D00A7C277 /* Filters.swift in Sources */,
 				FD6D5FEC1D4B7B6B00A7C277 /* NSRegularExpression+Utilities.swift in Sources */,
-				FD6D606C1D4BA19D00A7C277 /* TemplateLoader.swift in Sources */,
 				FD6D5FE71D4B778E00A7C277 /* Metadata.swift in Sources */,
-				FD6D60611D4BA19D00A7C277 /* Context.swift in Sources */,
-				FD6D60691D4BA19D00A7C277 /* Template.swift in Sources */,
 				FD6D5FF81D4B91F800A7C277 /* YAMLDateFormatter.swift in Sources */,
-				FD6D60661D4BA19D00A7C277 /* Node.swift in Sources */,
 				FD6D60701D4BA21B00A7C277 /* TemplateRenderer.swift in Sources */,
 				FD8531DA1D4A2A8D00658286 /* SiteReader.swift in Sources */,
 				FD6D607A1D4BA36A00A7C277 /* MarkdownConverter.swift in Sources */,
@@ -707,17 +641,12 @@
 				FD6D5FE11D4A4BE600A7C277 /* String+Paths.swift in Sources */,
 				FDF93A071D84554200C9C8FF /* CollectionRenderer.swift in Sources */,
 				FD6D5FE51D4B4E7100A7C277 /* Document.swift in Sources */,
-				FD6D60671D4BA19D00A7C277 /* Parser.swift in Sources */,
-				FD6D60641D4BA19D00A7C277 /* Lexer.swift in Sources */,
 				FD8531D91D4A2A8D00658286 /* Site.swift in Sources */,
 				FD6D5FFD1D4B975400A7C277 /* File.swift in Sources */,
-				FD6D606B1D4BA19D00A7C277 /* Inheritence.swift in Sources */,
 				FD2EE1061D86CCD900700C58 /* Paginate.swift in Sources */,
 				FD3915A81D7F13A500F7F5F7 /* SiteObserver.swift in Sources */,
-				FD6D606A1D4BA19D00A7C277 /* Include.swift in Sources */,
 				FD6D5FEE1D4B7F8700A7C277 /* Utilities.swift in Sources */,
 				FD8531D81D4A2A8D00658286 /* Post.swift in Sources */,
-				FD6D606D1D4BA19D00A7C277 /* Tokenizer.swift in Sources */,
 				FDCC12CC1D9A72580067D6E4 /* BuildDateRenderer.swift in Sources */,
 				FD6D60741D4BA2AE00A7C277 /* Stencil+MathFilters.swift in Sources */,
 				FD3915A61D7F01B700F7F5F7 /* SiteServer.swift in Sources */,
@@ -810,7 +739,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -857,19 +786,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.spelt.spelt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		FD8531A11D4A29B700658286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -889,12 +826,20 @@
 		FD8531A21D4A29B700658286 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -971,7 +916,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1031,7 +976,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1090,7 +1035,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1139,7 +1084,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
